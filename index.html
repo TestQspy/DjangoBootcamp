@@ -73,5 +73,41 @@
             <td>2,649,890</td>
         </tr>
     </table>
-</body>
+    <h1>===Login Form===</h1>
+    <form class="form1" action="index.html" method="post">
+        <h1>Log In</h1>
+        <h2>Please Input your Email and Password</h2>
+        <input type="email" name="useremail" value="">
+        <p><input type="password" name="userpassword" value=""></p>
+        <input type="submit" value="Submit">
+    </form>    
+    <h1>===Color Choose Form===</h1>
+    <form class="form2" action="index.html" method="post">
+        <h1>Choose Color!</h1>
+        <h2>Click on Button</h2>
+        <input type="color" name="colorpicker" value="">
+    </form>
+    <h1>===Text Form===</h1>
+    <form action="index.html" method="get">
+        <h2>Enter some text</h2>
+        <input type="text" name="textinput">
+        <input type="submit" value="Submit">
+    </form>
+    <h1>===Label Form===</h1>
+    <form action="index.html" method="get">
+        <label>
+            Enter some text
+            <input type="text" name="textinput">
+        </label>
+        <label>
+            Click button
+            <input type="submit" value="Submit">
+        </label>
+    </form>
+    <h1>===Label Right Way Form===</h1>
+    <form action="index.html" method="get">
+        <label for="userinput">Enter some text</label>
+        <input id="userinput" type="text" name="textinput" placeholder="Some random text" required>
+    </form>
+</body> 
 </html>

@@ -7,107 +7,35 @@
     <title>HTML level 1</title>
 </head>
 <body>
-    <h1>===First Level Exercise===</h1>
-    <h1>Welcome to my Website!</h1>
-    <p>I'm excited to eventually learn Django!</p>
-    <a href="https://www.djangoproject.com/">Here is a link to the official Django Website</a>
-    <p>Here is a picture of the Python Logo</p>
-    <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python Logo">
-    <br><br>
-    <p>Here are three reasons Django is cool</p>
-    <ol>
-        <li>Ridiculously Fast</li>
-        <li>Reassuringly Secure</li>
-        <li>Exceedingly Scalable</li>
-    </ol>
-    <h2>Bonus: Optional Extra Credit</h2>
-    <p>Can you figure out how to make a pciture a link?</p>
-    <br>
-    <br>
-    <br>
-    <a href="http://djangoproject.com"><img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" alt="Django Logo"></a>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <h1>===Second Level Exercise===</h1>
-    <table border="1">
-        <thead>
-            <th>Number</th>
-            <th>Color</th>
-            <th>Country</th>
-        </thead>
-        <tr>
-            <td>250</td>
-            <td>Red</td>
-            <td>USA</td>
-        </tr>
-        <tr>
-            <td>100</td>
-            <td>Blue</td>
-            <td>France</td>
-        </tr>
-    </table>
     <br>
     <br>
-    <table border="1">
-        <thead>
-            <th>Country Name</th>
-            <th>Country Flag</th>
-            <th>GDP (millions of USD)</th>
-        </thead>
-        <tr style="text-align: center">
-            <td>United States</td>
-            <td style="padding: 15px"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/320px-Flag_of_the_United_States.svg.png" alt=""></td>
-            <td>18,561,930</td>
-        </tr>
-        <tr style="text-align: center">
-            <td>India</td>
-            <td style="padding: 15px"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/320px-Flag_of_India.svg.png" alt=""></td>
-            <td>2,250,990</td>
-        </tr>
-        <tr style="text-align: center">
-            <td>United Kingdom</td>
-            <td style="padding: 15px"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/320px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" alt=""></td>
-            <td>2,649,890</td>
-        </tr>
-    </table>
-    <h1>===Login Form===</h1>
-    <form class="form1" action="index.html" method="post">
-        <h1>Log In</h1>
-        <h2>Please Input your Email and Password</h2>
-        <input type="email" name="useremail" value="">
-        <p><input type="password" name="userpassword" value=""></p>
-        <input type="submit" value="Submit">
-    </form>    
-    <h1>===Color Choose Form===</h1>
-    <form class="form2" action="index.html" method="post">
-        <h1>Choose Color!</h1>
-        <h2>Click on Button</h2>
-        <input type="color" name="colorpicker" value="">
-    </form>
-    <h1>===Text Form===</h1>
-    <form action="index.html" method="get">
-        <h2>Enter some text</h2>
-        <input type="text" name="textinput">
-        <input type="submit" value="Submit">
-    </form>
-    <h1>===Label Form===</h1>
-    <form action="index.html" method="get">
-        <label>
-            Enter some text
-            <input type="text" name="textinput">
-        </label>
-        <label>
-            Click button
-            <input type="submit" value="Submit">
-        </label>
-    </form>
-    <h1>===Label Right Way Form===</h1>
-    <form action="index.html" method="get">
-        <label for="userinput">Enter some text</label>
-        <input id="userinput" type="text" name="textinput" placeholder="Some random text" required>
+    <h1>Course Sign Up Page</h1>
+    <p>Please Note: First Name, Last Name, Password and Email are required</p>
+    <form action="nextpage.html" method="get">
+        <label for="fistname">First Name:</label>
+        <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="name@email.com" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <p>Are you over the age of 18?</p>
+        <label for="yes"> Yes:</label>
+        <input type="radio" name="yes" id="loc">
+        <label for="loc"> No:</label>
+        <input type="radio" name="yes" id="loc">
+        <p>Do you have a Credit Card or PayPal?</p>
+        <select name="dropdown" id="drop">
+            <option value="CreditCard" itemid="cc">Credit Card</option>
+            <option value="PayPal">PayPal</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Sign Up">
     </form>
 </body> 
 </html>

@@ -32,3 +32,9 @@ li a{
 li a:visited {
     color: chartreuse;
 }
+.spacer{
+    height: 300px;
+    background-color: aliceblue;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}

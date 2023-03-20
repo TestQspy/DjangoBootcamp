@@ -4,38 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
     <title>HTML level 1</title>
 </head>
 <body>
-    <h1>===Second Level Exercise===</h1>
-    <br>
-    <br>
-    <h1>Course Sign Up Page</h1>
-    <p>Please Note: First Name, Last Name, Password and Email are required</p>
-    <form action="nextpage.html" method="get">
-        <label for="fistname">First Name:</label>
-        <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
-        <label for="lastname">Last Name:</label>
-        <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
-        <br>
-        <br>
+    <h1>Welcome to Free Blog!</h1>
+    <div>
+        <p class="firstpara">Thanks so much for visiting htis site!</p>
+    </div>
+    <h2>What is this site for?</h2>
+    <p>This site can do three things:</p>
+    <ol>
+        <li id="itemone">Take in text input</li>
+        <li>Take in Log In Information</li>
+        <li><a href="http://www.google.com">Take you to Google</a></li>
+    </ol>
+    <textarea name="randtextarea"  cols="17" rows="2" placeholder="Type something here..."></textarea>
+    <h2>Please log in to save your blog post</h2>
+    <form action="" method="get">
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" placeholder="name@email.com" required>
         <label for="password">Password:</label>
         <input type="password" name="password" id="password" required>
-        <p>Are you over the age of 18?</p>
-        <label for="yes"> Yes:</label>
-        <input type="radio" name="yes" id="loc">
-        <label for="loc"> No:</label>
-        <input type="radio" name="yes" id="loc">
-        <p>Do you have a Credit Card or PayPal?</p>
-        <select name="dropdown" id="drop">
-            <option value="CreditCard" itemid="cc">Credit Card</option>
-            <option value="PayPal">PayPal</option>
-        </select>
-        <br>
-        <br>
         <input type="submit" value="Sign Up">
     </form>
+    <div class="exit">
+        <p>Questions or Comments? Send us feedback here:</p>
+        <textarea id="textblock" name="feedbacktextarea" cols="70" rows="10"></textarea>
+    </div>
+
 </body> 
 </html>

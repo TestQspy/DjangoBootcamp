@@ -38,3 +38,34 @@ li a:visited {
     margin: 0px 0px 0px 0px;
     padding: 0px;
 }
+table{
+    margin: auto;
+}
+td{
+    height: 500px;
+    width: 500px;
+    border: 6px solid #add8e6;
+}
+.one{
+    background-color: #20BF55;
+    margin-left: 100px;
+}
+.two{
+    background-color: #0B4F6C;
+}
+.three{
+    background-color: #01BAEF;
+}
+.four{
+    background-color: #FBFBFF;
+}
+.five{
+    background-color: #757575;
+}
+.projecth1{
+    text-align: center;
+    border: none;
+}
+.projecth1{
+    font-family: 'Fasthand', cursive;
+}

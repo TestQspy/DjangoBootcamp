@@ -1,56 +1,19 @@
-// Sleep In if it is not a weekday or we are on vacation
-function sleepIn(weekday,vacation){
-    return vacation || !weekday
-}
-
-// If both monkeys smiles we are in truble (true) or both of them does not smile else we are not in trouble
-function monkeyTroubles(aSmile,bSmile) {
-    return aSmile && bSmile || !aSmile && !bSmile
-}
-
-// Multiple given string with given number - quick version
-function stringeTimes(str,n) {
-    return str.repeat(n)
-}
-
-// Multiple given string with given number - for version
-function stringeTimes2(str,n) {
-    var result = ""
-    for (var i=0;i<n;i++){
-        result=result+str
-    }
-    return result
-}
-
-// if any of the value is 13 then don sum anything on the right
-function luckySum(a,b,c) {
-    var valArr = [a,b,c]
-    var sum=0
-    for (var index = 0; index < valArr.length; index++) {
-        if (valArr[index]!==13) {
-            sum+=valArr[index]
-        }else{
-            break
+var users = []
+var fname = ""
+while (true) {
+    var choice = prompt("Type one of the specific action: \nadd - to add new user to the array \nremove - to remove specific user from the array \ndisplay - to print out all of the users \nquit - to end the loop")
+    if (choice.toLowerCase() === "quit") {
+        break
+    } else if (choice.toLowerCase() === "add"){
+        fname = prompt("Please type a first name to add a user: ")
+        users.push(fname)
+    } else if (choice.toLowerCase() === "remove"){
+        fname = prompt("Please type a first name to remove a user: ")
+        var index = users.indexOf(fname);
+        if (index > -1) {
+          users.splice(index, 1); // remove the element at the specified index
         }
+    } else if (choice.toLowerCase()=="display"){
+        console.log(users)
     }
-    return sum
-}
-
-// ticket if speeding on birthday get -5 km/h xd
-function caughtSpeeding(speed, isBirthday) {
-    if (isBirthday) {
-        speed-=5
-    }
-    if (speed>=81) {
-        return 2
-    } else if (speed<=80 && speed>60){
-        return 1
-    }else{
-        return 0
-    }
-}
-
-//
-function makeBricks(small,big,goal) {
-    return small+big*5 >=goal
 }

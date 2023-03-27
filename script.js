@@ -1,11 +1,14 @@
 console.log("For Loop:")
-var word = "Hello"
-for(var i=0;i<5; i++){
-    console.log(word)
+for(var i=1;i<=25; i++){
+    if(i%2==0){
+        console.log(i)
+    }
 }
-var index = 0
+var index = 1
 console.log("While Loop:")
-while(index<5){
-    console.log(word)
+while(index<=25){
+    if(index%2==0){
+        console.log(index)
+    }
     index++
 }

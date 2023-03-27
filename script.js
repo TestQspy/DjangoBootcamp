@@ -1,14 +1,11 @@
-console.log("For Loop:")
-for(var i=1;i<=25; i++){
-    if(i%2==0){
-        console.log(i)
-    }
-}
-var index = 1
-console.log("While Loop:")
-while(index<=25){
-    if(index%2==0){
-        console.log(index)
-    }
-    index++
+var fname = prompt("Type your first name: ")
+var surename = prompt("Type your last name: ")
+var age = prompt("Type your age: ")
+var tall = prompt("Type your height: ")
+var petName = prompt("Type your pet name: ")
+console.log(petName[petName.length-1].toLowerCase())
+if(fname[0].toLowerCase() == surename[0].toLowerCase() && (age>20 && age<30) && tall>=170 && petName[petName.length-1].toLowerCase() == "y"){
+    console.log('Hello spy comrade!')
+}else{
+    console.log('Nothing to find here!')
 }

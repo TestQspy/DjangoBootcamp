@@ -3,6 +3,12 @@
     padding-left: 48px;
     padding-right: 48px;
   }
+  .pt-6 {
+    padding-bottom: 68px;
+    padding-left: 48px;
+    padding-top: 85px;
+    padding-right: 48px;
+  }
   footer {
     /* position: fixed; */
     left: 0;
@@ -12,3 +18,17 @@
     color: #fff;
     padding: 20px;
   }
+  .unselectable, .tabledt {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.tabledt {
+  height: 120px;
+  width: 120px;
+  border: 3px solid black;
+  font-size: 55px;
+}
